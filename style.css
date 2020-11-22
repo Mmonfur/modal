@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+html {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+
+.modal-container_hidden {
+    visibility: hidden;
+}
+
+.modal-container {
+    border: 1px solid #cfcfcf;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;  
+    box-shadow: 0px 2px 2px rgb(155, 152, 152);
+}
+
+.close_btn {
+    float: right;
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.8rem;
+}
+
+/* Mobile view. Screen width is less or equal to 560 pixels. */
+
+@media screen and (max-width: 560px) {
+    .modal-container {
+        width: 100%;
+        }
+}
+
+/* PC view. */
+
+@media screen and (min-width: 561px) {
+    .modal-container {
+    width: 50%;
+    }
+
+   
+}
+
+.btn_ok, .btn_cancel {
+    float: right;
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    color: rgb(249, 250, 249);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.btn_ok {
+    background-color: rgb(5, 180, 72);
+}
+
+.btn_cancel {
+    background-color: red;
+
+}  
